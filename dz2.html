@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // 1. Оголосіть змінні str, num, flag и txt зі значеннями «Привіт», 123, true, «true».
+    // За допомогою typeof переконайтесь, що значення змінних належать типам: string, number и  boolean.
+
+    let str = 'Привіт'
+    let nun = 123;
+    let flag = true;
+    let txt = 'true';
+    console.log(typeof str);
+    console.log(typeof nun);
+    console.log(typeof flag);
+    console.log(typeof txt);
+
+
+    // 2. Оголосіть змінні a1, a2, a3, a4, a5. За домогою 3х математичних оператцій отримайте числа:
+    //     34,
+    //         12,
+    //         66,
+    //         90,
+    //         87
+    // Старайтесь використовувати різні оператори.
+    //     Example: 88 = (16 / 2) * 11
+
+    let a1 = 4
+    let a2 = 3
+    let a3 = 10
+    let a4 = 6
+    let a5 = 20
+
+    let res = (a3*a2)+a1
+    console.log(res);
+    let res2 = (a3-a4)*a2
+    console.log(res2);
+    let res3 = (a5*a2)+a4
+    console.log(res3)
+    let res4 = (a5*a1)+a3
+    console.log(res4)
+    let res5 = (a5*a1+a3)-a2
+    console.log(res5)
+
+
+
+    // Створіть змінні a6, a7, a8, a9, a10. Запишіть в них результати виразів:
+    //     5 % 3,
+    //     3 % 5,
+    //     5 + '3',
+    //     '5' - 3,
+    //     75 + 'кг'
+
+
+    let ti = ('5'- 3 )
+    console.log(ti)
+    let a6 = 2
+    let a7 = 3
+    let a8 = "53"
+    let a9 = 2
+    let a10 = '75кг'
+
+    // 4. Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
+    // Значееня площі зберігати в змінній s.
+
+
+    let height = 23
+    let width = 10
+    let hw = height * width;
+    console.log(hw)
+    let s = 230
+
+
+    // 5.  Напиши код, который находит объем цилиндра высотой 10м (переменная heightC) и диаметром основания 4м (dC),
+    //     результат поместите в переменную v.
+
+
+    let heightC = 10
+    let dC = 4
+    const P = 3.14
+    let res6 = P * Math.pow(dC/2,2)*heightC
+    console.log(res6)
+    let v = 125.60000000000001
+
+    // 6. У прямоугольного треугольника две стороны n (со значением 3) и m (со значением 4).
+    // Найдите гипотенузу k по теореме Пифагора (нужно использовать функцию Math.pow(число, степень) или оператор возведения в степень ** )
+
+    let n = 3
+    let m = 4
+    let res7 = Math.sqrt(Math.pow(n,2)+Math.pow(m,2))
+    console.log(res7)
+    let c = 5
+
+    // 8. Вывести в окно браузера при помощи метода alert() следующие данные: Ваше ФИО, возраст, хобби (каждой на новой строки спомощью \n).
+
+    let name = 'Назар'
+    let surname = 'Сухорукий'
+    let hobby = 'футбол'
+    alert (`${name}\n ${surname}\n ${hobby}\n `)
+
+  //   9. Создать 4 переменные с использованием ключевого слова let с именами str1, str2, str3, concatenation.
+  //       Переменной str1 присвоить фразу ‘Кто ‘, str2 – ‘ты ‘, str3 – ‘такой?’
+  // Локальной переменной concatenation присвоить результат конкатенации 3-х строк: str1, str2, str3.
+  //       Вывести в документ содержимое переменной concatenation спомощью document.write
+
+    let str1 = 'Хто'
+    let str2 = 'ти'
+    let str3 = 'такий'
+    let concatenation = (`${str1} ${str2} ${str3}`)
+    document.write(concatenation)
+
+
+
+    // 10. Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+    //     let str = "20";
+    // let a = 5;
+    // document.write(str + a + "<br/>");
+    // document.write(str - a + "<br/>");
+    // document.write(str * "2" + "<br/>");
+    // document.write(str / 2 + "<br/>");
+
+
+    document.write('20' + 5 + "<br/>");
+    document.write('20' - 5 + "<br/>");
+    document.write('20' * "2" + "<br/>");
+    document.write('20' / 2 + "<br/>");
+
+
+    // 13. С помощью окна ввода, вызываемого методом prompt, сделать сложение двух чисел, а вывод результата при помощи метода alert
+
+    let oi= prompt(2+2)
+    alert(oi)
+
+
+
+    // 4. С помощью окна ввода, вызываемого методом prompt, пользователь последовательно выводит имя, фамилию и возраст, а вам не обходимо вывести строку такого вида
+    // Доброго вечера Иван Иванов, мои поздравления что вам 32 , а вывод результата при помощи метода alert
+
+    let name1 = prompt('enter to name')
+    let surname1 = prompt('enter to surname')
+    let age =prompt('enter to age')
+    alert(`Добрий вечір ${name1} ${surname1} мої вітання що вам ${age}`);
+
+
+
+</script>
+
+</body>
+</html>
